@@ -1,0 +1,118 @@
+<form class='searchBar mb-1 ml-1 mr-1'>
+  
+    <!-- 1ère ligne -->
+    <div class="row d-flex justify-content-center">
+
+      <div class="col d-flex p-0 justify-content-between">
+        <div class="form-group col">
+            <label class='head' for="brand">rechercher une marque</label>
+            <select class="form-control darktheme text-uppercase mt-5 p-0" id="brand">
+              <option>peugeot</option>
+              <option>renault</option>
+              <option>citroën</option>
+              <option>honda</option>
+              <option>toyota</option>
+              <option>mitsubishi</option>
+              <option>wolkswagen</option>
+              <option>mercedes</option>
+              <option>fiat</option>
+              <option>kia</option>
+            </select>
+          </div>
+        <div class="form-group col">
+            <label class='head' for="model">rechercher un modèle</label>
+            <select class="form-control darktheme text-uppercase mt-5 p-0" id="model">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+      </div>
+
+      <div class="form-group col-3">
+        <label for="formControlRange" class='head pb-4'>prix</label>
+        <div class="custom-slider mb-0">
+          <ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options" class="form-control-range" id="formControlRange"></ng5-slider>
+        </div>
+      </div>
+
+      <div class="form-group col-3">
+        <label for="formControlRange" class='head pb-4'>kilométrage</label>
+
+        <div class="custom-slider">
+          <ng5-slider [(value)]="value2" [options]="options2"></ng5-slider>
+        </div>
+      </div>
+    
+    </div>
+    <!-- 2eme ligne  -->
+    
+    <div class="col d-flex p-0 justify-content-between">
+        <div class="form-group col-3 p-0">
+          <label class='head' for="model">rechercher par type de carburant</label>
+          <br>
+          <div class="d-flex justify-content-between">
+          
+            <div class="form-check">
+              <input type="checkbox" id="essence" value="option1">
+              <label class='ml-4' for="essence">essence</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="diesel" value="option2">
+              <label class='ml-4' for="diesel">diesel</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="electrique" value="option3">
+              <label class='ml-4' for="electrique">électrique</label>
+            </div>
+
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <div class="form-check">
+              <input type="checkbox" id="bioEthanol" value="option4">
+              <label class='ml-4' for="bioEthanol">bio-ethanol</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="hybride" value="option5">
+              <label class='ml-4' for="hybride">hybride</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="gaz" value="option6">
+              <label class='ml-4' for="gaz">carburant gazeux</label>
+            </div>
+
+          </div>
+        </div>
+        <div class="form-group col-2">
+            <label for="formControlRange" class='head pb-4'>date de mise en circulation</label>
+            <div class="custom-slider">
+              <ng5-slider [(value)]="value3" [options]="options3"></ng5-slider>
+            </div>
+        </div>
+        <div class="form-group col-2">
+          <label for="publicationDate" class='head pb-4'>date de publication</label>
+          <div class="custom-slider">
+            <ng5-slider [(value)]="value4" [options]="options4"></ng5-slider>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-between">
+          <div class="form-check">
+            <input type="checkbox" id="covid" value="option1">
+            <label class='ml-4' for="covid">dispositif covid</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="location" value="option1">
+            <label class='ml-4' for="location">en location</label>
+          </div>
+        </div>
+        <div class="col text-right p-0">
+          <button type="submit" class="col-6 btn cadre submit text-uppercase">rechercher&emsp;<i class="fas fa-search text-white"></i></button>
+        </div>
+      </div>
+  </form>
+  <div class="texture">
+
+  </div>

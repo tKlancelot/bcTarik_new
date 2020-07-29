@@ -1,1 +1,219 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Sora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Mitr&display=swap');
+
+
+
+.button, nav, .searchBar{
+    color:whitesmoke;
+    text-transform:uppercase;
+}
+
+
+.searchBar{
+    padding:2rem;
+    border-radius:4px;
+    border:1px solid #646472;
+}
+
+.navbar-brand{
+    letter-spacing: 0.4rem;
+    font-size:1.3rem;
+}
+
+.button{
+    font-size:1.2rem;
+}
+
+.btn{
+    font-weight:bolder;
+}
+
+.btn:focus{
+    color:white;
+    box-shadow:none;
+    border:none;
+}
+.button:hover{
+    background:#333;
+    color:whitesmoke; 
+}
+
+.submit{
+    background:dodgerblue!important;
+    border-radius:2px;
+}
+
+.submit:hover{
+    border:1px solid lightskyblue;
+    background:#3eb0ff!important;
+    color:white;
+}
+
+
+.cadre, .searchBar, .well{
+    background:#080808;
+}
+
+.well{
+    border:none;
+    border-radius:0;
+}
+
+.darktheme, .darktheme:focus{
+    background:#181820;
+}
+
+.form-control:focus{
+    box-shadow:0px 0px 0px;
+    border:1px solid dodgerblue;
+}
+
+.jumbo, nav, .searchBar, .well{
+    opacity:0.9;
+}
+
+
+.menuTab{
+    border:1px solid silver;
+    padding:2rem;
+    border-radius:4px;
+}
+
+.nice{
+    height:192px;
+    background-image: url(../src/assets/logo_lodevi.png);
+    background-repeat: no-repeat;
+    display:flex;
+    background-size:contain;
+    background-blend-mode: lighten;
+}
+
+img{
+    width:288px;
+    height:200px;
+}
+
+.tableline, .form{
+    color:#646472;
+    font-family: 'Mitr';
+}
+
+caption{
+    caption-side: top;
+}
+
+caption, nav{
+    background:#080808;
+}
+
+.navbar, nav{
+    display:flex;
+}
+
+nav{
+    font-size:0.8rem;
+}
+
+.pasnice{        
+    display:flex;
+    align-items: center;
+    margin-left:-8%;
+}
+
+
+
+input::placeholder{
+    /* text-transform: uppercase; */
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    color:#9696a4;
+    /* font-size:1.2rem;
+    line-height:3.6rem; */
+}
+
+.globalsearch{
+    padding:0 1%;
+}
+
+.rechDetail{
+    letter-spacing: 0.1rem;
+    /* font-size:1.4rem;    */
+}
+
+.rechDetail:hover, .rechDetail:hover .bigcaret{
+    color:dodgerblue;
+    background:none;
+    border-radius:2px;
+    border:1px solid dodgerblue;
+    transition:0.6s;
+}
+
+.rechDetail:hover .bigcaret{
+    border:none;
+}
+
+.bigcaret{
+    /* font-size:2rem; */
+    color:whitesmoke;
+}
+
+#detail{
+    display:none;
+}
+
+.bigcaret{
+    transform: rotate(180deg);
+}
+
+.custom-slider{
+    font-family: 'Catamaran';
+}
+
+.custom-slider .ng5-slider .ng5-slider-pointer {
+    background-color: dodgerblue;
+    box-shadow: 1px 1px 1px inset lightskyblue;
+    border:none;
+    border-radius:0;
+    width:8px;
+    height:12px;
+    top:-4px;
+}
+
+
+.custom-slider .ng5-slider .ng5-slider-pointer:after {
+    display: none;
+}
+
+.custom-slider .ng5-slider .ng5-slider-selection {
+    background: dodgerblue !important;
+}
+
+
+.nav-item a span, .head{
+    /* text-decoration: underline; */
+    color:dodgerblue;
+    letter-spacing: 0.1rem;
+}
+
+
+.nav-item a:hover{
+    /* text-decoration: underline; */
+    background:lightcyan!important;
+}
+
+.texture{
+    background-image: url('../src/assets/texture1.jpg');
+    /* background-size: cover; */
+    height:18px;
+    border-bottom:1px solid #334;
+    border-left:1px solid #334;
+    border-right:1px solid #334;
+}
+
+.texture, .well{
+    border-radius:0 0px 8px 8px;
+}
+

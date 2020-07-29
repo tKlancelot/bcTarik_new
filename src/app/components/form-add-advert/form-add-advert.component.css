@@ -1,0 +1,16 @@
+
+.form{
+    border:1px solid gainsboro;
+}
+
+label, input{
+    text-transform: uppercase;
+    font-weight:lighter;
+}
+
+input:focus{
+    border:dodgerblue;
+    box-shadow: 0px 0px 1px 1px dodgerblue;
+}
+
+

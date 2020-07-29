@@ -1,0 +1,26 @@
+
+        <nav class="expand justify-content-between">
+            <div class="m-0 p-0">
+                <a class="navbar-brand">Navbar</a>
+            </div>
+            
+                <div class="col-4">
+                    <form class='col d-flex p-0'>
+                        <input class="form-control globalsearch" type="search" placeholder="recherche" aria-label="Search">
+                        <button class="btn button cadre rechDetail ml-3" type="submit">rechercher</button>
+                    </form>
+                </div>
+                <div class="mr-4">
+                    <input type="checkbox" id='detail' (click)="isCollapsed = !isCollapsed"
+                    [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+                    <label class="btn button cadre rechDetail" for="detail"><b class='bigcaret'>&#9654;</b>&nbsp;recherche détaillée</label>
+                </div>
+        </nav>
+    <div class="m-0">
+        <!-- <hr> -->
+        <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+            <div class="well p-0 m-0">
+                <app-search-bar-content></app-search-bar-content>
+            </div>
+        </div>
+    </div>

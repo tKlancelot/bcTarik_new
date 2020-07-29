@@ -1,0 +1,43 @@
+{
+  "adverts": [
+    {
+      "id" : 1,
+      "ref" : "48gb",
+      "year" : "2012-08-09",
+      "brand" : "toyota",
+      "model" : "avensis",
+      "price" : 12800,
+      "description" : "une petite description de cette voiture",
+      "mileage" : 24000,
+      "title" : "toyota avensis",
+      "publicationDate" : "2012-04-23",
+      "picture": "car_pink.jpg"
+    },
+    {
+      "id" : 2,
+      "ref" : "f48c",
+      "year" : "2016-09-06",
+      "brand" : "peugeot",
+      "model" : "208",
+      "price" : 9000,
+      "description" : "une petite description de cette voiture",
+      "mileage" : 10500,
+      "title" : "peugeot 208",
+      "publicationDate" : "2017-06-12",
+      "picture": "car_pink2.jpg"
+    },
+    {
+      "id" : 3,
+      "ref" : "d4a4",
+      "year" : "2010-06-04",
+      "brand" : "renault",
+      "model" : "clio",
+      "price" : 12500,
+      "description" : "une petite description de cette voiture",
+      "mileage" : 68000,
+      "title" : "renault clio",
+      "publicationDate" : "2018-04-10",
+      "picture": "car_pink3.jpg"
+    }
+  ]
+} 
