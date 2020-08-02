@@ -1,0 +1,15 @@
+.thead{
+    background: #8995d6;
+    color:whitesmoke;
+}
+
+.table > thead > tr > th{
+    padding:4px 0 0 0;
+    text-align: center;
+    /* line-height: normal; */
+    border:none;
+}
+
+.table{
+    text-align: center;
+}

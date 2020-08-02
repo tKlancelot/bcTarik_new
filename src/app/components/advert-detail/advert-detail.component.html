@@ -1,0 +1,40 @@
+<div class="container card rounded p-0 mt-md-5" style="width:50rem;">
+    <div class="card-header text-center p-4">
+        <h5>
+            {{element.title}}
+        </h5>
+        <img class="card-img pb-4" src="../../../assets/{{element.picture}}" alt="{{element.picture}}">
+    </div>
+    <div class="card-body">
+        <h5 class='entete text-center'><i class="fas fa-asterisk"></i>&emsp;caractéristiques&emsp;<i class="fas fa-asterisk"></i></h5>
+        <div class="d-flex justify-content-between mb-2 mt-2">
+            <div class="col">
+                <div class="encadre pl-3">
+                    <h5 class="card-title">{{element.brand}}</h5>
+                    <h5 class="card-title">{{element.model}}</h5>
+                    <p class="card-text">année : <span class='spec'>{{element.year | date:'yyyy' }}</span></p>
+                    <!-- <p class="card-text spec">{{element.ref}}</p> -->
+                    <p class="card-text">{{element.mileage}} km</p>
+                    <p class="card-text">{{element.price}} €</p>
+                </div>
+            </div>
+            <div class='col'>
+                <div class="encadre description mb-2 p-2">
+                    <p class="card-text">référence : <span class='spec'>{{element.ref}}</span></p>        
+                </div>
+                <div class="encadre p-2">
+                    <p class="card-text">date d'ajout : <span class='spec'>{{element.publicationDate}}</span></p>        
+                </div>
+            </div>
+        </div>
+        <div class='encadre description m-4 p-3'>
+            <p class="card-text text-justify">{{element.description}}</p>
+        </div>
+    </div>
+    <div class="card-footer p-4">
+        <button class='col btn rechDetail moreInfo pb-0 text-uppercase'><i class="fas fa-hand-point-left"></i>&nbsp;<a routerLink='/clientView'>retour</a></button>
+    </div>
+
+  </div>
+
+  

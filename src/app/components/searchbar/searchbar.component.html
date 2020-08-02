@@ -1,4 +1,4 @@
-<nav class="pt-3 pb-0 expand justify-content-between">
+<nav class="pt-3 pb-0 justify-content-between">
     <div class="pb-2 pl-2">
         <a class="navbar-brand">Navbar</a>
     </div>
@@ -12,14 +12,17 @@
         <div class="mr-4">
             <input type="checkbox" id='detail' (click)="isCollapsed = !isCollapsed"
             [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
-            <label class="btn button cadre rechDetail" for="detail"><b class='bigcaret'>&#9654;</b>&nbsp;recherche détaillée</label>
+            <label class="btn button cadre rechDetail" for="detail"><i id='icon' class="fas fa-caret-up"></i>&nbsp;recherche détaillée</label>
         </div>
-</nav>
-<div class="m-0">
-    <!-- <hr> -->
+    </nav>
+    <div class="m-0">
+        <!-- <hr> -->
     <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
         <div class="well">
             <app-search-bar-content></app-search-bar-content>
         </div>
     </div>
 </div>
+
+
+<!-- <b class='bigcaret'>&#9654;</b> -->

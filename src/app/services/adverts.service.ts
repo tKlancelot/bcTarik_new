@@ -31,33 +31,33 @@ export class AdvertsService {
       )
     }
   
-    // getOneShoe(id: number): Observable<Shoes> {
-    //   return this.http.get<Shoes>(this.apiUrl + '/' + id)
-    //   .pipe(
-    //   retry(1),
-    //   catchError(this.handleError)
-    //   );
-    // }
+    getOneAdvert(id: number): Observable<Advert> {
+      return this.http.get<Advert>(this.apiUrl + '/' + id)
+      .pipe(
+      retry(1),
+      catchError(this.handleError)
+      );
+    }
   
-    // addShoe(shoes: Shoes): Observable<Shoes> {
-    //   return this.http.post<Shoes>(this.apiUrl ,shoes, this.httpOptions).pipe(
-    //   catchError(this.handleError)
-    //   );
-    // }
+    addAdvert(adverts: Advert): Observable<Advert> {
+      return this.http.post<Advert>(this.apiUrl ,adverts, this.httpOptions).pipe(
+      catchError(this.handleError)
+      );
+    }
   
-    // updateShoe(shoes: Shoes) {
-    //   return this.http.put<Shoes>(this.apiUrl + '/' + shoes.id ,shoes, this.httpOptions).pipe(
-    //   catchError(this.handleError)
-    //   );
-    // }
+    updateAdvert(adverts: Advert) {
+      return this.http.put<Advert>(this.apiUrl + '/' + adverts.id ,adverts, this.httpOptions).pipe(
+      catchError(this.handleError)
+      );
+    }
   
-    // deleteShoe(id: number): Observable<Shoes> {
-    //   return this.http.delete<Shoes>(this.apiUrl + '/' + id)
-    //   .pipe(
-    //   retry(1),
-    //   catchError(this.handleError)
-    //   );
-    // }
+    deleteAdvert(id: number): Observable<Advert> {
+      return this.http.delete<Advert>(this.apiUrl + '/' + id)
+      .pipe(
+      retry(1),
+      catchError(this.handleError)
+      );
+    }
   
     handleError(error) {
       let errorMessage = '';

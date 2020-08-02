@@ -33,10 +33,18 @@
                         <td>model</td>
                         <td>{{element.model}}</td>
                     </tr> -->
-                    <tr>
+                    <!-- <tr>
 
                         <td>description</td>
                         <td>{{element.description}}</td>
+                    </tr> -->
+                    <tr>
+
+                        <td>note moyenne</td>
+                        <td>
+                            <progressbar max="10" [value]="7" type="success" [striped]="false" [animate]="true"><i>7 / 10</i></progressbar>
+                            <!-- <progressbar class="progress-striped"  [value]="88" type="danger"><i>88 / 150</i></progressbar> -->
+                        </td>   
                     </tr>
                     <!-- <tr>
                         <td>kilométrage</td>
@@ -49,7 +57,7 @@
             </table>
         </div>
         <div class="card-body m-4">
-            <button class='col btn rechDetail moreInfo pb-0 text-uppercase'><i class="fas fa-info-circle"></i>&nbsp;en savoir plus</button>
+            <button class='col btn rechDetail moreInfo pb-0 text-uppercase'><i class="fas fa-info-circle"></i>&nbsp;<a routerLink='/advertDetail/{{element.id}}'>en savoir plus</a></button>
         </div>
         <div class="card-footer">
             <p class="card-text">date de publication : {{element.publicationDate}}</p>

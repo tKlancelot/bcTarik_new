@@ -8,6 +8,7 @@ import { Options } from 'ng5-slider';
 })
 export class SearchBarContentComponent implements OnInit {
 
+  show: boolean = true;
   value: number = 2000;
   value2: number = 80000;
   value3: number = 2004;
@@ -31,7 +32,20 @@ export class SearchBarContentComponent implements OnInit {
     ceil: 2020
   };
   
-  constructor() { }
+  modelRenault = ['clio','scenic', 'twingo', 'clio', 'kangoo', 'captur', 'espace'];
+  brands = ['renault','peugeot','citroën','honda','toyota','mitsubishi','wolkswagen','mercedes','fiat','kia'];
+
+  onAffiche(){
+    console.log('on affiche le form');
+  }
+
+  constructor() { 
+    // setTimeout(
+    //   () => {
+    //     this.show = false;
+    //   }, 4000
+    // );
+  }
   
   ngOnInit(): void { 
   }

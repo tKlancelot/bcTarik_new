@@ -31,7 +31,10 @@ import { SearchBarContentComponent } from './components/search-bar-content/searc
 import { Ng5SliderModule } from 'ng5-slider';
 import { ClientViewComponent } from './components/client-view/client-view.component';
 import { AdminComponent } from './components/admin/admin.component';
-
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { FormsModule } from '@angular/forms';
+import { AdvertDetailComponent } from './components/advert-detail/advert-detail.component';
+import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,9 @@ import { AdminComponent } from './components/admin/admin.component';
     MyslideshowComponent,
     SearchBarContentComponent,
     ClientViewComponent,
-    AdminComponent
+    AdminComponent,
+    AdvertDetailComponent,
+    AdminHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +73,9 @@ import { AdminComponent } from './components/admin/admin.component';
     BsDatepickerModule.forRoot(),
     ModalModule.forRoot(),
     RatingModule.forRoot(),
-    Ng5SliderModule 
+    Ng5SliderModule,
+    ProgressbarModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

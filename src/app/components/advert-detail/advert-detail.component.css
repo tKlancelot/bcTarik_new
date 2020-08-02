@@ -1,0 +1,25 @@
+/* .card-body{
+    font-family:'Mitr';
+} */
+
+.card-header, h5{
+    text-transform: uppercase;
+}
+
+.card-header, .card-text{
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1rem;
+}
+
+.encadre{
+    border:1px solid rgb(188, 188, 218);
+    background:lavender;
+    /* margin:1rem; */
+    border-radius: 4px;
+    box-shadow:0px 0px 2px inset white;
+    color:#6271c8;
+}
+
+.description{
+    background: azure;
+}
