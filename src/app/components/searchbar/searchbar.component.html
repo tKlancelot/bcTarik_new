@@ -1,28 +1,26 @@
 <nav class="pt-3 pb-0 justify-content-between">
     <div class="pb-2 pl-2">
-        <a class="navbar-brand">Navbar</a>
+        <a class="navbar-brand">my magic app</a>
+        
     </div>
     
         <div class="col-4">
             <form class='col d-flex p-0'>
-                <input class="form-control globalsearch" type="search" placeholder="recherche" aria-label="Search">
-                <button class="btn button cadre rechDetail ml-3" type="submit">rechercher</button>
+                <input class="form-control" type="search" placeholder="recherche" aria-label="Search">
+                <button class="btn cadre rechDetail ml-3" type="submit">rechercher</button>
             </form>
         </div>
         <div class="mr-4">
             <input type="checkbox" id='detail' (click)="isCollapsed = !isCollapsed"
             [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
-            <label class="btn button cadre rechDetail" for="detail"><i id='icon' class="fas fa-caret-up"></i>&nbsp;recherche détaillée</label>
+            <label class="btn cadre rechDetail" for="detail"><i id='icon' class="fas fa-caret-up"></i>&nbsp;recherche détaillée</label>
         </div>
     </nav>
     <div class="m-0">
         <!-- <hr> -->
     <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
-        <div class="well">
+        <div class="well metal">
             <app-search-bar-content></app-search-bar-content>
         </div>
     </div>
 </div>
-
-
-<!-- <b class='bigcaret'>&#9654;</b> -->

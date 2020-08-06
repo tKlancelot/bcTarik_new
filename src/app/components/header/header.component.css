@@ -1,5 +1,43 @@
-.jumbotron{
-    font-family:'Sora';
-    color:#eee;
-    border-radius:0px;
+/* ********************* */
+/* ****   header    **** */
+/* ********************* */
+
+.nice{
+    background-image: url(../../../assets/logo_lodevi.png);
+    opacity:0.7;
 }
+
+
+#myAccountGarageOwner, .nice{
+    height:124px;
+    width:124px;
+    /* display:flex; */
+    background-size: cover;
+    border-top-left-radius:8%;
+    border-top-right-radius:8%;
+    border-bottom-right-radius:36%;
+    border-bottom-left-radius:36%;
+    /* border-radius: 50% 20% / 10% 40%; */
+}
+
+#myAccountGarageOwner{
+    /* background:orange; */
+    /* background-image: url(../../../assets/myGarage.jpg); */
+    /* background-image: url(../../../assets/myGarage2.jpg); */
+    background-image: url(../../../assets/myGarage3.jpg);
+    background-position: center;
+    opacity:0.9;
+    /* border:1px solid transparent; */
+}
+
+#myAccountGarageOwner:hover{
+    border:2px solid transparent;
+    /* transform: translate(0,-4px); */
+    opacity: 1;
+}
+
+.col-1, .col-10, .col, .well{
+    padding:0;
+    margin:0;
+}
+

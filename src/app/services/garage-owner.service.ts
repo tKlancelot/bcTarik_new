@@ -31,10 +31,18 @@ export class GarageOwnerService {
     )
   }
 
+
   getOneGarageOwner(id: number): Observable<GarageOwner> {
     return this.http.get<GarageOwner>(this.apiUrl + '/' + id)
     .pipe(
     retry(1),
+    catchError(this.handleError)
+    );
+  }
+
+
+  addGarageOwner(garageOwner: GarageOwner): Observable<GarageOwner> {
+    return this.http.post<GarageOwner>(this.apiUrl ,garageOwner, this.httpOptions).pipe(
     catchError(this.handleError)
     );
   }

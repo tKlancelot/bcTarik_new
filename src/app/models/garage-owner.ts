@@ -21,7 +21,7 @@ export class GarageOwner {
     ){
         this.id = id;
         this.pseudo = pseudo;
-        this.password = sha256(password);
+        this.password = password;
         this.name = name;
         this.tel = tel;
         this.mail = mail;

@@ -15,6 +15,7 @@ export class AdvertsService {
 
 
     apiUrl = 'http://localhost:3000/adverts';
+    url2 = 'http://localhost:3000/adverts?garageRef=abc';
   
     httpOptions = {
       headers : new HttpHeaders({
@@ -30,6 +31,14 @@ export class AdvertsService {
         catchError(this.handleError)
       )
     }
+
+    getGarage1():Observable<Advert[]>{
+      return this.http.get<Advert[]>(this.url2, this.httpOptions).pipe(
+        retry(1),
+        catchError(this.handleError)
+      )
+    }
+
   
     getOneAdvert(id: number): Observable<Advert> {
       return this.http.get<Advert>(this.apiUrl + '/' + id)

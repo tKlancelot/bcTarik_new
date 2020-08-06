@@ -1,28 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+/* bootstrap */
+
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+/* google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Sora:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Mitr&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Concert+One&family=Recursive:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 
 /* ********************* */
-/* ****   header    **** */
+/* ****   global    **** */
 /* ********************* */
 
-.nice{
-    height:128px;
-    width:128px;
-    background-image: url(../src/assets/logo_lodevi.png);
-    opacity:0.7;
-    display:flex;
-    background-size: cover;
-    /* border:1px solid #3949a3; */
-    /* background-blend-mode: lighten; */
-    border-top-left-radius:8%;
-    border-top-right-radius:8%;
-    border-bottom-right-radius:36%;
-    border-bottom-left-radius:36%;
+.mytab, .rechDetail, .button, nav, .searchBar{
+    text-transform: uppercase;
+}
 
-    /* border-radius: 50% 20% / 10% 40%; */
+.themeHeader, .entete, .headings, caption{
+    background-color: #484860;
+}
+
+.table, .moreInfo, .card-footer, .card-header, .card-text, .form, .themeHeader{
+    font-family:'Baloo Tamma 2';
+}
+
+/* ********************* */
+/* ****   titres    **** */
+/* ********************* */
+
+h5{
+    font-size:1.4rem;
+    letter-spacing: 0.1rem;
+    color:#848496;
+    font-family:
+    /* 'C.O.D.E.R.', */
+    'Saira Stencil One',
+    'Baloo Tamma 2'
+    ;
+    padding:0.5rem 0 0.5rem;
 }
 
 /* ********************* */
@@ -30,7 +46,11 @@
 /* ********************* */
 
 .cadre, .well, nav{
-    background:#20295b;
+    background:#242436;
+}
+
+.cadre{
+    font-size:1.2rem;
 }
 
 nav{
@@ -44,7 +64,7 @@ nav{
 
 .navbar-brand{
     letter-spacing: 0.4rem;
-    font-size:1.3rem;
+    font-size:1.2rem;
 }
 
 
@@ -54,36 +74,78 @@ nav{
 
 .searchBar{
     border-radius:4px;
-    border:1px solid #8995d6;
-    background: #2d397f;
+    border:1px solid #323244;
+    background: #121220;
+    opacity:0.8;
 }
 
-.button, nav, .searchBar{
+nav, .searchBar{
     color:whitesmoke;
-    text-transform:uppercase;
 }
 
 .fa-caret-up{
     transform: rotate(90deg);
 }
-progressbar{
-    max-height: 1.5rem;
+
+
+.custom-slider{
+    font-family: 'Catamaran';
 }
+
+.custom-slider .ng5-slider .ng5-slider-pointer {
+    /* background-color: #6271c8; */
+    background-color: #646472;
+    box-shadow: 1px 1px 1px inset #d4d4da;
+    border:none;
+    border-radius:0;
+    width:8px;
+    height:12px;
+    top:-4px;
+}
+
+.custom-slider .ng5-slider .ng5-slider-pointer:after {
+    display: none;
+}
+
+.custom-slider .ng5-slider .ng5-slider-selection{
+    background: limegreen !important;
+}
+
+.ng5-slider .ng5-slider-bubble.ng5-slider-limit{
+    color:tomato!important;
+}
+
+.ng5-slider .ng5-slider-bubble{
+    color:limegreen!important;
+}
+
 
 /* ********************* */
 /* ****   forms     **** */
 /* ********************* */
 
+.form{
+    border:1px solid #d4d4df;
+    padding:0;
+}
+
 input{
     letter-spacing: 0.1rem;
 }
 
-.button{
-    font-size:1.2rem;
+input::placeholder{
+    font-style: italic;
+    color:#a4a4ad!important;
+}
+
+input:focus{
+    border:#484860;
+    box-shadow: 0px 0px 1px 1px #848496;
 }
 
 .btn{
     font-weight:bolder;
+    color:#a4a4ad;
 }
 
 .btn:focus{
@@ -91,50 +153,19 @@ input{
     box-shadow:none;
     border:none;
 }
-.button:hover{
-    background:#333;
-    color:whitesmoke; 
-}
 
-.submit{
-    background:#6271c8!important;
-    border-radius:2px;
-}
-
-.submit:hover{
-    border:1px solid #8995d6;
-    background:#3949a3!important;
-    color:white;
-}
-
-.indigo{
-    background:#6271c8;
-    color:whitesmoke;
-    letter-spacing: 0.2rem;
-}
-
-.indigo:focus{
-    background:white;
-    opacity:0.8;
+.form-control:focus{
+    box-shadow:0px 0px 0px;
+    border:1px solid greenyellow;
 }
 
 /* ********************* */
 /* ****  navtabs    **** */
 /* ********************* */
 
-.mytab{
-    text-transform: uppercase;
-}
-
 .head{
-    color:#8995d6;
+    color:#848496;
     letter-spacing: 0.1rem;
-}
-
-
-.form-control:focus{
-    box-shadow:0px 0px 0px;
-    border:1px solid #6271c8;
 }
 
 .jumbo, nav, .well{
@@ -142,11 +173,30 @@ input{
 }
 
 .menuTab{
-    border:1px solid silver;
+    border:1px solid #d4d4df;
     padding:2rem;
     border-radius:4px;
 }
 
+.nav-item a span{
+    /* text-decoration: underline; */
+    color:#848496;
+    letter-spacing: 0.1rem;
+}
+
+.mytab{
+    color:#848496;
+}
+
+.mytab h5{
+    margin-top:1rem;
+}
+
+
+.nav-item a:hover, .card-header{
+    /* text-decoration: underline; */
+    background:#f4f4fd!important;
+}
 
 /* ********************* */
 /* *** home adverts  *** */
@@ -159,155 +209,31 @@ img{
 
 caption{
     caption-side: top;
-    background:#6271c8;
     letter-spacing:0.1rem;
     color:whitesmoke;
 }
-
-
 
 nav{
     font-size:0.8rem;
     font-family:'Mitr';
 }
 
-.pasnice{        
-    display:flex;
-    align-items: center;
-    margin-left:-8%;
+
+/* ********************* */
+/* ***     table     *** */
+/* ********************* */
+
+.table tr:hover{
+    background:#f4f4fd;
+    color:#484860;
 }
 
-
-
-input::placeholder{
-    font-style: italic;
-    color:#6271c8!important;
-}
-
-.globalsearch{
-    padding:0 1%;
-}
-
-.rechDetail{
-    letter-spacing: 0.1rem;
-    /* font-size:1.4rem;    */
-}
-
-.rechDetail:hover, .rechDetail:hover .bigcaret{
-    color:#6271c8;
-    background:none;
-    border-radius:2px;
-    border:1px solid #6271c8;
-    transition:0.6s;
-}
-
-.moreInfo{
-    background:#6271c8;
-    color:whitesmoke;
-}
-.moreInfo a{
-    color:whitesmoke;
-}
-.moreInfo:hover a{
-    color:#6271c8;
-}
-
-.rechDetail:hover .bigcaret{
-    border:none;
-}
-
-.bigcaret{
-    /* font-size:2rem; */
-    color:whitesmoke;
-}
-
-#detail{
-    display:none;
-}
-
-.bigcaret{
-    transform: rotate(180deg);
-}
-
-.custom-slider{
-    font-family: 'Catamaran';
-}
-
-.custom-slider .ng5-slider .ng5-slider-pointer {
-    background-color: #6271c8;
-    box-shadow: 1px 1px 1px inset #8995d6;
-    border:none;
-    border-radius:0;
-    width:8px;
-    height:12px;
-    top:-4px;
-}
-
-
-.custom-slider .ng5-slider .ng5-slider-pointer:after {
-    display: none;
-}
-
-.custom-slider .ng5-slider .ng5-slider-selection{
-    background: #6271c8 !important;
-}
-
-.ng5-slider .ng5-slider-bubble.ng5-slider-limit{
-    color:orange!important;
-}
-
-.ng5-slider .ng5-slider-bubble{
-    color:limegreen!important;
-}
-
-
-.nav-item a span{
-    /* text-decoration: underline; */
-    color:#6271c8;
-    letter-spacing: 0.1rem;
-}
-
-.mytab{
-    color:#6271c8;
-}
-
-
-.nav-item a:hover, .card-header{
-    /* text-decoration: underline; */
-    background:lavender!important;
-}
-
-.texture{
-    background-image: url('../src/assets/texture1.jpg');
-    /* background-size: cover; */
-    height:18px;
-    border-bottom:1px solid #334;
-    border-left:1px solid #334;
-    border-right:1px solid #334;
-}
-
-.spec{
-    color:orangered;
-    font-weight: bolder;
-}
-
-.card{
-    border:1px solid silver;
-}
-
-
-h5, .table, .moreInfo, .card-footer, .card-header, .card-text{
-    font-family:'Baloo Tamma 2';
-}
-
-h5{
-    font-size:1.6rem;
-    letter-spacing: 0.1rem;
-    color:#334191;
+.table tr:hover .link{
+    color:#484860;
 }
 
 .link{
-    color:#6271c8;
+    color:#545472;
     cursor:pointer;
 }
 
@@ -315,13 +241,59 @@ h5{
     text-decoration: underline;
 }
 
-.entete{
-    background:#6271c8;
+/* ********************* */
+/* *** buttons style *** */
+/* ********************* */
+
+.rechDetail{
+    letter-spacing: 0.1rem;
+}
+
+.rechDetail:hover, .rechDetail:hover .bigcaret{
+    color:#646472;
+    background:none;
+    border-radius:2px;
+    border:1px solid #a4a4ad;
+    transition:0.6s;
+}
+
+.moreInfo{
+    background:#484860;
+    padding-bottom:0;
+}
+.moreInfo a{
     color:whitesmoke;
-    line-height: normal;
-    margin-top: 0;
-    box-shadow: 0px 4px 1px #8995d6;
-    padding-top:0.4rem;
+}
+.moreInfo:hover a{
+    color:#646472;
+}
+
+.rechDetail:hover .bigcaret{
+    border:none;
+}
+
+
+/* ********************* */
+/* *** cards details *** */
+/* ********************* */
+
+#detail{
+    display:none;
+}
+
+.spec{
+    color:limegreen;
+    font-weight: bolder;
+}
+
+.card{
+    border:1px solid #d4d4df;
+}
+
+.entete{
+    box-shadow: 0px 4px 1px #848496;
+    padding:1rem;
+    margin:0 auto;
 }
 
 .entete i{
@@ -329,11 +301,27 @@ h5{
     line-height: 1rem;
 }
 
-.themeHeader{
-    background-color: indigo;
+.test{
+    margin:8% auto;
 }
 
-.themeHeader:hover{
-    background: #8995d6;
-    transition:0.6s;
+.headings{
+    padding:0.7rem;;
+}
+
+.titre{
+    color:whitesmoke;
+}
+
+.connect{
+    color:#646472;
+}
+
+/* ********************* */
+/* ***     alerts    *** */
+/* ********************* */
+
+.alert{
+    margin:0.5rem 0;
+    padding:0.5rem ;
 }

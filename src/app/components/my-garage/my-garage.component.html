@@ -1,0 +1,46 @@
+<app-header-garage-owner></app-header-garage-owner>
+
+<div class="d-flex justify-content-center">
+    <div class="col-8">
+        <p>last update : <span [ngClass]="{'text-info':true}">{{ lastUpdate | async | date : "d MMMM yyyy hh:mm:ss" | uppercase }}</span></p>
+        <button routerLink='/garageOwner/1' class='btn moreInfo rechDetail mr-4 mb-4'>retour</button>
+        <button routerLink='/addAdvert' class='btn moreInfo rechDetail mb-4'>j'ajoute une annonce</button>
+    </div>
+</div>
+<div class="d-flex justify-content-center">
+    <div class="col-8">
+        
+    <table class='table rounded table-bordered'>
+        <thead class='thead text-uppercase'>
+            <tr>
+                <th>référence</th>
+                <th>année de mise en circulation</th>
+                <th>marque</th>
+                <th>modèle</th>
+                <th>description de l'annonce</th>
+                <th>prix</th>
+                <th>kilométrage</th>
+                <th>titre</th>
+                <th>date de publication</th>
+                <th>options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of adverts">
+                <!-- <td>{{item.id}}</td> -->
+                <td class='link'>{{item.ref}}</td>
+                <td>{{item.year}}</td>
+                <td>{{item.brand}}</td>
+                <td>{{item.model}}</td>
+                <td width='30%'>{{item.description}}</td>
+                <td>{{item.price}} €</td>
+                <td>{{item.mileage}} km</td>
+                <td>{{item.title}}</td>
+                <td>{{item.publicationDate}}</td>
+                <td class='link'><a (click)='deleteThisAd(item.id)'>delete this element</a></td>
+            </tr>
+        </tbody>
+        <caption class='pl-3 pt-2 p-1 text-uppercase themeHeader'>nombres total d'annonces dans la base : {{ advertCount }}</caption>
+    </table>
+    </div>
+</div>

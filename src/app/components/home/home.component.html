@@ -1,45 +1,34 @@
 <h5><i class="fas fa-stream"></i>&emsp;nombre d'annonces en ligne : {{advertCount}}</h5>
-<div class="row justify-content-between">
-    <div *ngFor='let element of advert' class="card m-4" style="max-width:48rem;">
-        <div class="card-header text-center">
-            <h5 class="card-title text-center">{{element.title}}</h5>
-            <img class="card-img pb-4" src="../../../assets/{{element.picture}}" alt="Card image cap">
-        </div>
-        <div class="card-body p-4 m-0">
-            <table class="m-0 table rounded table-sm text-uppercase">
-                <caption class='p-0 text-center'>caractéristiques</caption>
-                <tbody>
-                    <!-- <tr>
-                        <th scope="row">id</th>
-                        <th>{{element.id}}</th>
-                    </tr> -->
-                    <tr>
-                        <td>référence</td>
-                        <td style='color:blue'>{{element.ref}}</td>
-                    </tr>
-                    <!-- <tr>
-                        <td>date de mise en circulation</td>
-                        <td>{{element.year}}</td>
-                    </tr> -->
-                    <tr>
-                        <td>prix</td>
-                        <td>{{element.price}} €</td>
-                    </tr>
-                    <!-- <tr>
-                        <td>marque</td>
-                        <td>{{element.brand}}</td>
-                    </tr>
-                    <tr>
-                        <td>model</td>
-                        <td>{{element.model}}</td>
-                    </tr> -->
-                    <!-- <tr>
+<div class="d-flex justify-content-center col">
 
-                        <td>description</td>
-                        <td>{{element.description}}</td>
-                    </tr> -->
-                    <tr>
-
+    <div class="row col-10">
+        <div *ngFor='let element of advert' class="card m-4" style="max-width:48rem;">
+            <div class="card-header text-center">
+                <h5 class="card-title text-center">{{element.title}}</h5>
+                <img class="card-img pb-4" src="../../../assets/{{element.picture}}" alt="Card image cap">
+            </div>
+            <div class="card-body p-4 m-0">
+                <table class="m-0 table rounded table-sm text-uppercase">
+                    <caption class='p-0 text-center'>caractéristiques</caption>
+                    <tbody>
+                        <!-- <tr>
+                            <th scope="row">id</th>
+                            <th>{{element.id}}</th>
+                        </tr> -->
+                        <tr>
+                            <td>référence</td>
+                            <td style='color:blue'>{{element.ref}}</td>
+                        </tr>
+                        <!-- <tr>
+                            <td>date de mise en circulation</td>
+                            <td>{{element.year}}</td>
+                        </tr> -->
+                        <tr>
+                            <td>prix</td>
+                            <td>{{element.price}} €</td>
+                        </tr>
+                        <tr>
+                        
                         <td>note moyenne</td>
                         <td>
                             <progressbar max="10" [value]="7" type="success" [striped]="false" [animate]="true"><i>7 / 10</i></progressbar>
@@ -52,24 +41,25 @@
                         <!-- <td><a routerLink='/shoeDetail/{{element.id}}'>get this element by Id</a></td>
                             <td><a routerLink='/shoeEdit/{{element.id}}'>update this element</a></td>
                             <td class='link suppression'><a (click)='deleteThisShoe(element.id)'>delete this element</a></td> -->
-                    <!-- </tr> -->
-                </tbody>
-            </table>
-        </div>
-        <div class="card-body m-4">
-            <button class='col btn rechDetail moreInfo pb-0 text-uppercase'><i class="fas fa-info-circle"></i>&nbsp;<a routerLink='/advertDetail/{{element.id}}'>en savoir plus</a></button>
-        </div>
+                            <!-- </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-body m-4">
+                    <button class='col btn rechDetail moreInfo text-uppercase'><i class="fas fa-info-circle"></i>&nbsp;<a routerLink='/advertDetail/{{element.id}}'>en savoir plus</a></button>
+                </div>
         <div class="card-footer">
             <p class="card-text">date de publication : {{element.publicationDate}}</p>
         </div>
     </div>
 </div>
+</div>
 
-  <!-- id : number;
-  ref : string;
-  year : Date;
-  price : number;
-  description : string;
-  mileage : number;
-  title : string;
-  publicationDate : Date; -->
+<!-- id : number;
+    ref : string;
+    year : Date;
+    price : number;
+    description : string;
+    mileage : number;
+    title : string;
+    publicationDate : Date; -->

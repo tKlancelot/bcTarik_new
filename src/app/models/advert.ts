@@ -10,8 +10,7 @@ export class Advert {
     title : string;
     publicationDate : Date;
     picture : string;
-    idGarage : number;
-    idGarageOwner : number;
+    garageRef : string;
 
     constructor(
         id:number = null,
@@ -25,8 +24,7 @@ export class Advert {
         title:string=null,
         publicationDate:Date=null,
         picture:string=null,
-        idGarage:number = null,
-        idGarageOwner:number = null,
+        garageRef:string=null
         )
         {
 
@@ -41,7 +39,6 @@ export class Advert {
         this.title = title;
         this.publicationDate = publicationDate;
         this.picture = picture;
-        this.idGarage = idGarage;
-        this.idGarageOwner = idGarageOwner;
+        this.garageRef = garageRef;
     }
 }

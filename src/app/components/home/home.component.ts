@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AdvertsService } from 'src/app/services/adverts.service';
 import { Advert } from 'src/app/models/advert';
 import { ProgressbarConfig } from 'ngx-bootstrap/progressbar';
- 
-// such override allows to keep some initial values
+
  
 export function getProgressbarConfig(): ProgressbarConfig {
   return Object.assign(new ProgressbarConfig(), { animate: false, striped: false,  max: 150 });

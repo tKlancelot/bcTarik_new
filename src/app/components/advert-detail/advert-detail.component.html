@@ -1,4 +1,4 @@
-<div class="container card rounded p-0 mt-md-5" style="width:50rem;">
+<div class="container card rounded p-0 test" style="width:50rem;">
     <div class="card-header text-center p-4">
         <h5>
             {{element.title}}
@@ -7,11 +7,10 @@
     </div>
     <div class="card-body">
         <h5 class='entete text-center'><i class="fas fa-asterisk"></i>&emsp;caractéristiques&emsp;<i class="fas fa-asterisk"></i></h5>
-        <div class="d-flex justify-content-between mb-2 mt-2">
+        <div class="d-flex justify-content-between mt-4">
             <div class="col">
                 <div class="encadre pl-3">
-                    <h5 class="card-title">{{element.brand}}</h5>
-                    <h5 class="card-title">{{element.model}}</h5>
+                    <h5 class="card-title mt-0 mb-2">{{element.brand}}  {{element.model}}</h5>
                     <p class="card-text">année : <span class='spec'>{{element.year | date:'yyyy' }}</span></p>
                     <!-- <p class="card-text spec">{{element.ref}}</p> -->
                     <p class="card-text">{{element.mileage}} km</p>

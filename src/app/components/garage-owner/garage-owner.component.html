@@ -1,0 +1,45 @@
+<app-header-garage-owner></app-header-garage-owner>
+
+<div class="col d-flex justify-content-center">
+    
+    <div class='col-10'>
+        <button routerLink='/clientView' class='btn moreInfo rechDetail mb-2'>retour</button>    
+        <button routerLink='/addGarage' class='btn moreInfo rechDetail ml-4 mb-2'>ajouter un garage</button>    
+        <!-- apparait -->
+        <div class="bordure">
+
+            <table class='table rounded m-0 p-0'>
+                <thead class='thead text-uppercase'>
+                    <tr>
+                        <th class='moreInfo'></th>
+                        <th>id</th>
+                        <th>garageName</th>
+                        <th>n° rue</th>
+                        <th>nom rue</th>
+                        <th>code postal</th>
+                        <th>référence garage</th>
+                        <th>date de fondation</th>
+                        <th>options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let garage of garage">
+                        <td class='moreInfo'><a routerLink="/myGarage/{{garage.id}}">accéder à ce garage</a></td>
+                        <td>{{garage.id}}</td>
+                        <td>{{garage.garageName}}</td>
+                        <td>{{garage.adress1}}</td>
+                        <td>{{garage.adress2}}</td>
+                        <td>{{garage.postalCode}}</td>
+                        <td class='lime'>{{garage.garageRef}}</td>
+                        <td>{{garage.dateFoundation}}</td>
+                        <td class='link'>ok see later
+                            <!-- <a (click)='deleteThisGarageOwner(item.id)'>delete this element</a> -->
+                        </td>
+                    </tr>
+                </tbody>
+                <caption class='pl-3 pt-2 p-1 text-uppercase themeHeader text-center'>mes garages actuels : <span class='lime'>{{ garageCount }}</span></caption>
+            </table>
+        </div>
+    </div>
+    
+</div>

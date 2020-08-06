@@ -1,0 +1,34 @@
+
+<div class="d-flex justify-content-center mytab test">
+
+    <form class='col-4 form rounded'>
+        <div class="headings">    
+            <h5 class='titre text-center'>connexion</h5>
+        </div>
+        <div class='col'>
+            <div class="col mt-4">
+                <label for="pseudo"><i class="fas fa-user-circle"></i>&emsp;pseudo</label>
+                <input type="email" class="form-control" id="pseudo" aria-describedby="pseudoHelp" placeholder="saisissez votre pseudo">
+                <small id="pseudoHelp" class="form-text text-muted">saisissez-vos données en toute sécurité ici</small>
+            </div>
+            <div class="col mt-4">
+                <label for="password"><i class="fas fa-key"></i>&emsp;mot de passe</label>
+                <input type="password" class="form-control" id="password" placeholder="saisissez votre mot de passe">
+            </div>
+        </div>
+        <div class="col mt-5">
+            <!-- <div class="col-6"></div> -->
+            <div class="col d-flex justify-content-start">
+                <input type="checkbox" class="form-check mr-4" id="exampleCheck1">
+                <label class="form-check" for="exampleCheck1"><i class="far fa-bookmark"></i>&emsp;mémoriser mon mot de passe</label>
+            </div>
+            <div class="d-flex col mt-2 mb-4">
+                <button routerLink='/garageOwner/1' type="submit" class="btn moreInfo rechDetail mr-2">se connecter</button>   
+                <button routerLink='/clientView' type="submit" class="btn moreInfo rechDetail">retour</button>   
+            </div>
+            <div class="col mt-2 mb-4">
+                <p>je n'ai pas encore de compte, <a routerLink='/garageRegister' class='connect'>je souhaite adhérer au programme&nbsp;<i class="fas fa-sign-in-alt"></i></a></p>
+            </div>
+        </div>
+    </form>
+</div>

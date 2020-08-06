@@ -1,4 +1,5 @@
 import { Component, SecurityContext } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -21,5 +22,12 @@ export class AppComponent {
   disabled: boolean = false;
 
   isCollapsed = false;
+
+  // decommenter lorsque app finished
+  
+  // constructor(private router: Router) { 
+  //   this.router.navigate(['/clientView']);
+  // }
+  
 
 }

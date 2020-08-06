@@ -1,54 +1,61 @@
-<!-- 
-<div class="bg-dark">
-    <form class='myForm text-light' #advertForm ="ngForm" (ngSubmit)="onSubmit()">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-3">
-                <div class="form-group">
-                    <label for="id">id</label>
-                    <input type="number" class='form-control' id='id' name='id' placeholder='id' required [(ngModel)]='advert.id' #id='ngModel'/>   
-                </div>
-                <div [hidden]='id.valid' class="alert alert-info">
-                    saisis un id valide
-                </div>
-                <div class="form-group">
-                    <label for="ref">référence</label>
-                    <input type="text" class='form-control' id='ref' name='ref' placeholder='référence' required [(ngModel)]='advert.ref' #ref ='ngModel'/>
-                </div>
-                <div [hidden]='ref.valid' class="alert alert-info">
-                    saisis une référence valide
-                </div>
-                <div class="form-group">
-                    <label for="year">année</label>
-                    <input type="date" class='form-control' id='year' name='year' placeholder="dd/MM/yyyy" [(ngModel)]='advert.year' #year ='ngModel'/>
-                </div>
+<app-header-garage-owner></app-header-garage-owner>
+<div class="d-flex justify-content-center">
+    <div class="col-6 m-4 form p-4">
+        <button routerLink='/myGarage/1' class='btn moreInfo rechDetail mb-4'>retour</button>
+        <form class='myForm text-light' #advertForm ="ngForm" (ngSubmit)="onSubmit()">
+            <h5 class='headings text-uppercase'>ajouter une annonce</h5>
+            <div class="form-group">
+                <label for="ref">référence</label>
+                <input type="text" class='form-control' id='ref' name='ref' minlength="4" maxlength="4" placeholder='référence' required [(ngModel)]='advert.ref' #ref ='ngModel'/>
             </div>
-            <div class="col-2"></div>
-            <div class="col-3">
-                <div class="form-group">
-                    <label for="price">prix</label>
-                    <input type="number" class='form-control' id='prix' name='prix' [(ngModel)]='advert.price' #price ='ngModel'/>
-                </div>
-                <div class="form-group">
-                    <label for="description">description</label>
-                    <input type="text" class='form-control' id='description' name='description' [(ngModel)]='advert.description' #description ='ngModel'/>
-                </div>
-                <div class="form-group">
-                    <label for="mileage">kilométrage</label>
-                    <input type="number" class='form-control' id='mileage' name='mileage' [(ngModel)]='advert.mileage' #mileage ='ngModel'/>
-                </div>
-                <div class="form-group">
-                    <label for="title">titre</label>
-                    <input type="text" class='form-control' id='title' name='title' [(ngModel)]='advert.title' #title ='ngModel'/>
-                </div>
-                <div class="form-group">
-                    <label for="publicationDate">date de publication</label>
-                    <input type="date" class='form-control' id='publicationDate' placeholder='dd/MM/yyyy' name='publicationDate' [(ngModel)]='advert.publicationDate' #publicationDate ='ngModel'/>
-                </div>  
-                <div class="form-group">
-                    <input class="btn text-uppercase p-1" type="submit">
-                </div>
+            <div [hidden]='ref.valid' class="alert alert-info">
+                saisis une référence valide
             </div>
+            <div class="form-group">
+                <label for="year">année</label>
+                <input type="date" class='form-control' id='year' name='year' placeholder="dd/MM/yyyy" [(ngModel)]='advert.year' #year ='ngModel'/>
+            </div>
+            <div class="form-group">
+            <label for="price">prix</label>
+            <input type="number" class='form-control col-2' id='price' name='price' [(ngModel)]='advert.price' #price ='ngModel'/>
+        </div>
+        <div class="form-group">
+            <label for="brand">marque</label>
+            <select class='form-control col-2 indigo text-uppercase p-0' id='brand' name='brand' [(ngModel)]='advert.brand' #brand ='ngModel'>
+                <option *ngFor='let item of brands' value="{{item}}">{{item}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="model">modèle</label>
+            <input type="text" class='form-control' id='model' name='model' [(ngModel)]='advert.model' #model ='ngModel'/>
+        </div>
+        <div class="form-group">
+            <label for="description">description</label>
+            <textarea class='form-control' id='description' name='description' [(ngModel)]='advert.description' #description ='ngModel'></textarea>
+        </div>
+        <div class="form-group">
+            <label for="mileage">kilométrage</label>
+            <input type="number" class='form-control col-2' id='mileage' name='mileage' [(ngModel)]='advert.mileage' #mileage ='ngModel'/>
+        </div>
+        <div class="form-group">
+            <label for="title">titre</label>
+            <input type="text" class='form-control' id='title' name='title' [(ngModel)]='advert.title' #title ='ngModel'/>
+        </div>
+        <div class="form-group">
+            <label for="publicationDate">date de publication</label>
+            <input type="date" class='form-control' id='publicationDate' placeholder='dd/MM/yyyy' name='publicationDate' [(ngModel)]='advert.publicationDate' #publicationDate ='ngModel'/>
+        </div>  
+        <div class="form-group mb-4">
+            <label for="picture">picture</label>
+            <input type="file" class='mb-4' id='picture' name='picture' [(ngModel)]='advert.picture' #picture ='ngModel'/>
+        </div>  
+        <div class="form-group">
+            <label for="garageRef">référence garage</label>
+            <input type="text" readonly class="form-control-plaintext col" value="abc" id='garageRef' name='garageRef' [(ngModel)]='advert.garageRef' #garageRef ='ngModel'/>
+        </div>  
+        <div class="form-group">
+            <input class="form-control col-2 btn moreInfo rechDetail text-uppercase p-1" type="submit">
         </div>
     </form>
-</div> -->
+</div>
+</div>

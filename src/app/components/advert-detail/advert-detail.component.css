@@ -6,20 +6,17 @@
     text-transform: uppercase;
 }
 
+
 .card-header, .card-text{
     /* text-transform: uppercase; */
     letter-spacing: 0.1rem;
 }
 
 .encadre{
-    border:1px solid rgb(188, 188, 218);
-    background:lavender;
-    /* margin:1rem; */
+    padding:0.5rem;
+    border:1px solid #d4d4df;
+    background:#f4f4fd;
     border-radius: 4px;
     box-shadow:0px 0px 2px inset white;
-    color:#6271c8;
-}
-
-.description{
-    background: azure;
+    color:#848496;
 }

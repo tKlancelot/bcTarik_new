@@ -35,6 +35,11 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { FormsModule } from '@angular/forms';
 import { AdvertDetailComponent } from './components/advert-detail/advert-detail.component';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
+import { GarageOwnerComponent } from './components/garage-owner/garage-owner.component';
+import { GarageLoginComponent } from './components/garage-login/garage-login.component';
+import { GarageRegisterComponent } from './components/garage-register/garage-register.component';
+import { HeaderGarageOwnerComponent } from './components/header-garage-owner/header-garage-owner.component';
+import { MyGarageComponent } from './components/my-garage/my-garage.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +61,12 @@ import { AdminHeaderComponent } from './components/admin-header/admin-header.com
     ClientViewComponent,
     AdminComponent,
     AdvertDetailComponent,
-    AdminHeaderComponent
+    AdminHeaderComponent,
+    GarageOwnerComponent,
+    GarageLoginComponent,
+    GarageRegisterComponent,
+    HeaderGarageOwnerComponent,
+    MyGarageComponent
   ],
   imports: [
     BrowserModule,

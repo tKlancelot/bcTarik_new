@@ -2,13 +2,13 @@
 
 <div class="row justify-content-center">
     <div class="col d-flex justify-content-center m-5">
-        <a routerLink='/clientView' class='col-2 btn button themeHeader pt-2 p-1'><i class="far fa-arrow-alt-circle-left"></i>&emsp;retour à la vue client</a>
-        <a (click)='showGarageOwners()' class='col-2 btn button themeHeader ml-3 pt-2 p-1 text-white'><i class="fas fa-warehouse"></i>&emsp;tous les garagistes</a>
-        <a (click)='showAdverts()' class='col-2 btn button themeHeader ml-3 pt-2 p-1 text-white'><i class="fas fa-th-list"></i>&emsp;toutes les annonces</a>
+        <a routerLink='/clientView' class='col-2 btn rechDetail moreInfo pt-2 p-1'><i class="far fa-arrow-alt-circle-left"></i>&emsp;retour à la vue client</a>
+        <a (click)='showGarageOwners()' class='col-2 btn rechDetail moreInfo ml-3 pt-2 p-1'><i class="fas fa-warehouse"></i>&emsp;tous les garagistes</a>
+        <a (click)='showAdverts()' class='col-2 btn rechDetail moreInfo ml-3 pt-2 p-1'><i class="fas fa-th-list"></i>&emsp;toutes les annonces</a>
     </div>
     <div *ngIf='tableau; else otherTableau' class="col-11">
 
-        <table class='table table-hover rounded table-bordered'>
+        <table class='table rounded table-bordered'>
             <thead class='thead text-uppercase'>
                 <tr>
                     <th>id</th>
@@ -41,7 +41,7 @@
 
         <div class="col-11">
             
-            <table class='table table-hover rounded'>
+            <table class='table rounded table-bordered'>
                 <thead class='thead text-uppercase'>
                     <tr>
                         <th>référence</th>
@@ -53,8 +53,6 @@
                         <th>kilométrage</th>
                         <th>titre</th>
                         <th>date de publication</th>
-                        <th>idGarage</th>
-                        <th>idGarageOwner</th>
                         <th>options</th>
                     </tr>
                 </thead>
@@ -70,8 +68,6 @@
                         <td>{{item.mileage}} km</td>
                         <td>{{item.title}}</td>
                         <td>{{item.publicationDate}}</td>
-                        <td>{{item.idGarage}}</td>
-                        <td>{{item.idGarageOwner}}</td>
                         <td class='link'><a (click)='deleteThisAd(item.id)'>delete this element</a></td>
                     </tr>
                 </tbody>
